@@ -24,11 +24,6 @@ const createTransaction = async (accountTo, amount)=>{
 //Wallet like Metamask has the functionality to create a new account with random account address
 //also the account holds its own private key
 
-//generating account where the ether will be sent
-// const accountTo = web3.eth.accounts.create();
-// console.log("genereted account: ",accountTo);
-// console.log("To: ",accountTo.address);
-
 //generating account from that the ether will be sent
 const privateKey = process.env['privateKey'];
 const accountFrom = web3.eth.accounts.privateKeyToAccount(privateKey);

@@ -52,8 +52,6 @@ return createSignedTx(rawTx).then(sendSignedTx);
 
 }
 
-// createTransaction("0x508CbC04C7f894686AF56b0818De432C209DeC46",".01");
-
 app.post('/signTransaction',async(req,res)=>{
     try{
         const requestData = req.body;
